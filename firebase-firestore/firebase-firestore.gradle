@@ -25,7 +25,7 @@ protobuf {
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.12.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.16.1'
         }
         javalite {
             // The codegen for lite comes as a separate artifact
@@ -90,8 +90,8 @@ dependencies {
     implementation project(':protolite-well-known-types')
     implementation project(':firebase-database-collection')
 
-    implementation 'io.grpc:grpc-stub:1.12.0'
-    implementation 'io.grpc:grpc-protobuf-lite:1.12.0'
+    implementation 'io.grpc:grpc-stub:1.16.1'
+    implementation 'io.grpc:grpc-protobuf-lite:1.16.1'
     implementation 'io.grpc:grpc-okhttp:1.16.1'
     implementation 'io.grpc:grpc-android:1.16.1'
     implementation "com.google.android.gms:play-services-basement:$playServicesVersion"

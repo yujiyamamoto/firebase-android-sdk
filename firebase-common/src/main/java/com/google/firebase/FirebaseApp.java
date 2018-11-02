@@ -100,6 +100,7 @@ import javax.annotation.concurrent.GuardedBy;
 @PublicApi
 public class FirebaseApp {
 
+  // Copybara test comment
   private static final String LOG_TAG = "FirebaseApp";
 
   public static final String DEFAULT_APP_NAME = "[DEFAULT]";

@@ -39,6 +39,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -188,6 +190,12 @@ public class FirebaseFunctions {
    */
   public void useFunctionsEmulator(String origin) {
     urlFormat = origin + "/%2$s/%1$s/%3$s";
+  }
+
+  public void setTimeout(int timeout){
+    this.client.setConnectTimeout(timeout, TimeUnit.SECONDS);
+    this.client.setReadTimeout(timeout, TimeUnit.SECONDS);
+    this.client.setWriteTimeout(timeout, TimeUnit.SECONDS);
   }
 
   /**
